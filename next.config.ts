@@ -3,17 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   devIndicators: {
     buildActivity: false,
+    buildActivityPosition: "bottom-right"
   },
-
   eslint: {
-    // Allow production builds to successfully complete even if there are ESLint errors
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true
   },
-
   typescript: {
-    // Allow production builds to successfully complete even if there are type errors
-    ignoreBuildErrors: true,
-  },
+    ignoreBuildErrors: true
+  }
 };
 
 export default nextConfig;
